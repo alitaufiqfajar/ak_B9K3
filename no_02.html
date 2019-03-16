@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Answer Number 2 - Bootcamp Arkademy Batch 9K3</title>
+</head>
+<script>
+    let regexPass = /(?=^.{8,20}$)(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&amp;*()_+}{&quot;:;'?/&gt;.&lt;,])(?!.*\s).*$/
+
+    function validate_password(password) {
+        let result = regexPass.exec(password);
+        console.log(result);
+        return (result !== null) ? 'True' : 'False'
+    }
+</script>
+
+<body>
+    <h1>Run validate_password function in console browser!</h1>
+</body>
+
+</html>

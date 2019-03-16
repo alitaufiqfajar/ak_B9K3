@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Answer Number 1 - Bootcamp Arkademy Batch 9K3</title>
+</head>
+<script>
+    let dataJson = null;
+    const BIODATA = {
+        "name": "Ali Taufiqfajar",
+        "addres": "Bogor",
+        "hobbies": ["Membaca Komik", "Membaca Novel", "Menonton"],
+        "is_meried": false,
+        "school": {
+            "highschool": "SMK Bustanul Ulum Tasikmalaya",
+            "university": "Universitas Ibn Khaldun Bogor"
+        },
+        "skil": [
+            { "Language": "HTML, CSS, JavaScript, PHP" },
+            { "DBMS": "MySQL" }
+        ]
+    };
+
+    function myBiodata() {
+        dataJson = JSON.stringify(BIODATA);
+        document.getElementById('app').innerHTML = dataJson;
+    }
+
+
+
+</script>
+
+<body>
+    <div id="app">
+
+    </div>
+
+    <script> myBiodata() </script>
+</body>
+
+</html>

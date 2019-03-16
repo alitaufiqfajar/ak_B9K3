@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Answer Number 5 - Bootcamp Arkademy Batch 9K3</title>
+</head>
+<script>
+    function countHandshake(person) {
+        let total = 0;
+        for (let x = 0; x < person; x++) {
+            for (let y = 0; y < person; y++) {
+                total += 1;
+
+            }
+        }
+        return total / 2;
+    }
+</script>
+
+<body>
+    <h1>Run validate_password function in console browser!</h1>
+    <script>
+        function drawImage(angka) {
+            let persegi = []
+            let hitungTengah = Math.ceil(angka / 2)
+            persegi.push("\n")
+            for (var i = 1; i <= angka; i++) {
+                for (var j = 1; j <= angka; j++) {
+                    if (((j % 2) !== 0 && (i % 2) !== 0) || i == hitungTengah || j == hitungTengah) {
+                        persegi.push(` * `)
+                    }
+                    else {
+                        persegi.push(` = `)
+                    }
+                }
+                persegi.push("\n")
+            }
+
+            let pattern = persegi.join("")
+            console.log(pattern);
+        }
+    </script>
+</body>
+
+</html>
